@@ -95,7 +95,7 @@ p.h3_musee {
     font-weight: 700;
     font-size: 31.25px;
     line-height: 39px;
-    color: #FFFFFF;
+    color: black;
 }
 
 p.titre_musee {
@@ -113,11 +113,244 @@ p.text_musee {
     font-weight: 400;
     font-size: 20px;
     line-height: 26px;
-    color: #FFFFFF;
+    color: black;
 }
 
 .elipse{
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.social_network{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 99px;
+}
+
+.social_network svg{
+margin: 0 5px;
+}
+
+.text_hero {
+    padding: 0 50px;
+}
+
+#bandeau_musee{
+    padding: 50px 100px;
+    border-top: 1px solid grey;
+}
+
+#bandeau_musee p:first-child{
+    font-family: 'FuturaB';
+    margin-bottom: 10px;
+}
+
+#bandeau_musee p:last-child{
+    font-family: 'Futura';
+font-style: normal;
+font-weight: 400;
+font-size: 31.25px;
+line-height: 40px;
+
+}
+
+#section_musee{
+    display: flex;
+}
+
+#section_musee div,
+#section_musee img{
+    width: 50%;
+}
+
+#section_musee div{
+    padding: 80px 40px;
+}
+
+#section_musee div p:first-child{
+    padding-bottom: 20px;
+}
+
+.btn_orange{
+    background-color: var(--orange-color);
+    display: flex;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 15px;
+    border-radius: 99px;
+    color: white;
+    font-family: 'FuturaB';
+    align-items: center;
+}
+
+.fill_btn_orange{
+    border: 1px solid var(--orange-color);
+    display: flex;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 15px;
+    border-radius: 99px;
+    color: var(--orange-color);
+    font-family: 'FuturaB';
+    align-items: center;
+}
+.btn_orange:hover{
+    background-color: var(--orange-color-hover);
+}
+
+.btn_orange > svg{
+    margin-left: 10px;
+}
+
+
+.bx-wrapper{
+    box-shadow: none;
+    border: none;
+}
+
+#event_musee{
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+#event_musee img{
+    width: 100%;
+}
+
+#event_musee div:nth-child(1){
+    width: 60%;
+}
+#event_musee div:nth-child(2){
+    width: 20%;
+}
+#event_musee div:nth-child(3){
+    width: 20%;
+}
+
+.color_event{
+    background-color: var(--orange-color);
+    height: 100%;
+}
+
+.date_musee{
+    font-family: 'FuturaB';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+}
+
+#event_musee .date_musee{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#event_musee .date_musee svg{
+    margin-right: 5px;
+}
+
+.info_event{
+    padding: 0 40px;
+}
+
+#band_musee{
+    display: flex;
+    align-items: center;
+}
+
+#band_musee img{
+    width: 80%;
+}
+
+#band_musee div{
+    width: 20%;
+    padding: 20px;
+}
+
+footer {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--bronze-color);
+    position: relative;
+  }
+
+.flex-footer{
+    justify-content: space-around;
+    display: flex;
+}
+.padd-footer{   
+    padding: 99px 80px 37px 80px;
+}
+.rectangle{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.btn{
+    padding-top: 69px;
+}
+.outline{
+    border-radius: 99px;
+    color:var(--orange-color);
+    padding: 12px 36px;
+    border: 1px solid var(--orange-color);
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 25px;
+    line-height: 23px;
+    background-color: transparent;
+}
+.filled{
+    background: var(--orange-color);
+    border-radius: 99px;
+    color:white;
+    border: 1px solid var(--orange-color);
+    padding: 12px 36px;
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+}
+.circle{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.subtitle{
+    font-family: 'Futura';
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+.title{
+    font-family: 'Arvo';
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+}
+.flex-social{
+    display: flex;
+    justify-content: space-between;
+}
+.btm-footer{
+    margin: auto;
+    padding-top: 55px;
+    padding-bottom: 47px;
+}
+.info{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }

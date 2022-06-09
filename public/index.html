@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- Librairie des sliders -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- CSS -->
     <link href="../src/styles.css" rel="stylesheet">
+
+    <!-- CDN TailwinD -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -69,16 +78,222 @@
 
   <div id="hero">
     <div class="text_hero">
-      <p class="h3_musee">Bienvenue au musée</p>
+      <p class="h3_musee" style="color:white">Bienvenue au musée</p>
       <p class="titre_musee">Bourdelle</p>
-      <p class="text_musee">Venez dévouvrir les travaux de l’artiste aux sein de ses ateliers du 18eme arrondissements.</p>
+      <p class="text_musee" style="color:white">Venez dévouvrir les travaux de l’artiste aux sein de ses ateliers du 18eme arrondissements.</p>
     </div>
     <div class="img_hero">
         <img src="../src/img/statut.png">
     </div>
     <img class="elipse" src="../src/img/elipse.png">
+    <div class="social_network">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5">
+        <path d="M12 15.75C14.0711 15.75 15.75 14.0711 15.75 12C15.75 9.92893 14.0711 8.25 12 8.25C9.92893 8.25 8.25 9.92893 8.25 12C8.25 14.0711 9.92893 15.75 12 15.75Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+        <path d="M16.125 3.375H7.875C5.38972 3.375 3.375 5.38972 3.375 7.875V16.125C3.375 18.6103 5.38972 20.625 7.875 20.625H16.125C18.6103 20.625 20.625 18.6103 20.625 16.125V7.875C20.625 5.38972 18.6103 3.375 16.125 3.375Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16.875 8.25C17.4963 8.25 18 7.74632 18 7.125C18 6.50368 17.4963 6 16.875 6C16.2537 6 15.75 6.50368 15.75 7.125C15.75 7.74632 16.2537 8.25 16.875 8.25Z" fill="white"/>
+        </g>
+      </svg>
+
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5">
+        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M15.75 8.25H14.25C13.6533 8.25 13.081 8.48705 12.659 8.90901C12.2371 9.33097 12 9.90326 12 10.5V21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9 13.5H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>
+
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.5">
+            <path d="M11.25 8.25L8.25 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M5.76996 14.6769C5.11752 13.7037 4.70216 12.5912 4.55717 11.4285C4.41217 10.2658 4.54158 9.08539 4.93501 7.98177C5.32845 6.87814 5.97497 5.88203 6.82275 5.07329C7.67053 4.26456 8.696 3.66569 9.81693 3.32469C10.9379 2.98368 12.1231 2.91004 13.2776 3.10965C14.4322 3.30926 15.5239 3.77658 16.4653 4.47415C17.4066 5.17171 18.1715 6.08012 18.6985 7.12655C19.2256 8.17299 19.5001 9.32834 19.5002 10.5C19.5002 14.6421 16.5002 17.25 13.5002 17.25C10.5002 17.25 9.59721 15.275 9.59721 15.275" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+      </svg>
+
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.5">
+          <path d="M12 8.25027C12.0001 7.38867 12.2968 6.55337 12.8403 5.8848C13.3838 5.21624 14.1409 4.75517 14.9843 4.57913C15.8277 4.40309 16.7061 4.5228 17.4716 4.91814C18.2371 5.31348 18.8432 5.96034 19.188 6.74997L22.5 6.75L19.4754 9.77461C19.2785 12.8168 17.9311 15.67 15.707 17.7548C13.4828 19.8397 10.5486 20.9999 7.50002 21C4.50002 21 3.75002 19.875 3.75002 19.875C3.75002 19.875 6.75002 18.75 8.25002 16.5C8.25002 16.5 2.25002 13.5 3.75002 5.25C3.75002 5.25 7.50002 9 11.9987 9.75L12 8.25027Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+        </svg>       
+    </div>
   </div>
 
+  <div id="section_musee">
+    <div class="text_section">
+      <p class="h3_musee">Les travaux d’Antoine Bourdelle</p>
+      <p class="text_musee">Amet, pellentesque sit id augue sit leo vulputate donec neque. Ut imperdiet interdum volutpat vitae aenean malesuada nulla. Donec odio a convallis integer scelerisque tellus interdum. Accumsan phasellus quis purus felis consequat malesuada. Nam lacus velit in id sed elementum lectus est hendrerit. Vitae vitae consequat nec velit eget massa enim aliquam, enim. Mattis viverra sit suscipit risus, consequat quisque pellentesque.      </p>
+      <a class="btn_orange" href="#">Voir la suite de l'article <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="white"/>
+        </svg>        
+      </a>
+    </div>
+    <img src="../src/img/statut2.png">
+  </div>
+
+  <div id="bandeau_musee">
+    <p>LE MUSÉE</p>
+    <p>Intimité de l’appartement de  <strong>Bourdelle</strong> où le sculpteur vécut et travailla, majesté du <strong>Hall des plâtres</strong>  à la lumière diffuse, épure audacieuse de l'extension moderne - <u>le visiteur découvre le parcours d'une vie et d'une œuvre</u>, suit à son rythme les incessantes recherches stylistiques et plastiques du sculpteur visionnaire.</p>
+  </div>
   
+  <div id="slider_pictures">
+    <img src="../src/img/slider1.jpg" alt="">
+    <img src="../src/img/slider2.jpg" alt="">
+    <img src="../src/img/slider3.jpg" alt="">
+    <img src="../src/img/slider4.jpg" alt="">
+    <img src="../src/img/slider5.jpg" alt="">
+    <img src="../src/img/slider6.jpg" alt="">
+    <img src="../src/img/slider7.jpg" alt="">
+  </div>
+
+    <div id="event_musee">
+      <div class="info_event">
+        <p class="h3_musee">BOURDELLE ET L’ANTIQUE, UNE PASSION MODERNE</p>
+        <p class="date_musee">
+          <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 0C6.55228 0 7 0.447715 7 1V2H11V1C11 0.447715 11.4477 0 12 0C12.5523 0 13 0.447715 13 1V2H16C17.1046 2 18 2.89543 18 4V17C18 18.1046 17.1046 19 16 19H2C0.895431 19 0 18.1046 0 17V4C0 2.89543 0.895431 2 2 2H5V1C5 0.447715 5.44772 0 6 0ZM5 4H2V7H16V4H13V5C13 5.55228 12.5523 6 12 6C11.4477 6 11 5.55228 11 5V4H7V5C7 5.55228 6.55228 6 6 6C5.44772 6 5 5.55228 5 5V4ZM16 9H2V17H16V9Z" fill="#231403"/>
+            </svg>
+            
+            Du 12 octobre 2021 au 13 février 2022</p>
+        <p class="text_musee">Dans l’histoire des formes commes des idées, pas “d’avancée” qui ne procède d’un “recul”, pas de révolution esthétique qui...</p>
+        <a href="" class="fill_btn_orange">Lira la suite 
+          <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.29289 0.292893C8.68342 -0.0976311 9.31658 -0.0976311 9.70711 0.292893L15.7071 6.29289C15.8946 6.48043 16 6.73478 16 7C16 7.26522 15.8946 7.51957 15.7071 7.70711L9.70711 13.7071C9.31658 14.0976 8.68342 14.0976 8.29289 13.7071C7.90237 13.3166 7.90237 12.6834 8.29289 12.2929L12.5858 8L1 8C0.447715 8 0 7.55229 0 7C0 6.44772 0.447715 6 1 6L12.5858 6L8.29289 1.70711C7.90237 1.31658 7.90237 0.683417 8.29289 0.292893Z" fill="#F29A7E"/>
+          </svg>
+        </a>
+      </div>
+      <div class="img_event">
+        <img src="../src/img/carre1.png" alt="">
+      </div>
+      <div class="img_event">
+        <img src="../src/img/orange.png" alt="">
+      </div>
+    </div>
+
+    <div id="band_musee">
+      <img src="../src/img/band.png" alt="">
+      <div>
+        <p class="h3_musee">Les expositions</p>
+        <p style="font-weight: bold" class="text_musee">Le musée Bourdelle conserve des collections variées et riche. Venez découvrir notre très vaste collection.</p>
+      </div>
+    </div>
+
+    <footer>
+      <svg width="323" height="250" class="rectangle" viewBox="0 0 323 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect opacity="0.15" x="-183.57" y="-193.708" width="481.045" height="418.285" stroke="white" stroke-width="50"/>
+        </svg>
+        <svg width="687" height="501" class="circle" viewBox="0 0 687 501" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle opacity="0.15" cx="480.387" cy="480.273" r="455.021" stroke="white" stroke-width="50"/>
+        </svg>
+        <div class="padd-footer">
+          <div class="flex-footer">
+            <div>
+              <svg width="132" height="179" viewBox="0 0 132 179" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_51_414)">
+                <path d="M34.6665 98.9119H0.741211V61.6097H1.39546C29.1657 61.6097 41.4879 62.5755 48.0064 65.7021C54.7672 68.8287 59.8439 77.0135 59.8439 85.1861C59.8439 90.0149 57.663 94.3366 54.5249 96.256C51.3868 98.1755 46.2495 98.9119 34.6665 98.9119Z" fill="#F29A7E"/>
+                <path d="M57.1178 154.249C53.7374 157.617 50.8416 158.1 34.6665 158.1H0.741211V120.569H1.39546C39.0646 120.569 40.5186 120.569 48.4911 124.649C52.109 126.608 55.1382 129.491 57.2675 133.002C59.3969 136.513 60.5497 140.526 60.6072 144.628C60.4982 148.479 59.2987 152.089 57.1178 154.249Z" fill="#F29A7E"/>
+                <path d="M131.681 130.118C131.681 142.893 126.588 155.146 117.522 164.181C108.456 173.216 96.1597 178.293 83.3371 178.297H51.1566C53.8288 177.684 56.3503 176.542 58.5717 174.941C64.3632 170.377 67.7436 161.662 67.7436 151.847C67.7436 137.361 62.6791 126.822 51.8109 118.879C57.3601 117.189 59.541 115.511 61.9521 112.143C65.8172 107.085 67.7436 100.348 67.7436 92.6466C67.7436 79.8987 63.1637 70.0359 53.2042 61.6098H65.3204V23.8368H60.4739V39.9528H0.680664V0.296633H79.8962C89.4599 0.293557 98.8096 3.11683 106.763 8.40926C114.715 13.7017 120.914 21.2255 124.574 30.0287C128.235 38.832 129.192 48.5191 127.326 57.8646C125.459 67.2101 120.852 75.794 114.088 82.5303C111.977 84.6356 109.673 86.5392 107.206 88.2162C114.641 92.4192 120.824 98.5122 125.123 105.873C129.423 113.235 131.686 121.601 131.681 130.118Z" fill="#F29A7E"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_51_414">
+                <rect width="131" height="178" fill="white" transform="translate(0.680664 0.296631)"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <div>
+              <p class="title">Musée</p>
+              <p class="subtitle">Le musée</p>
+              <p class="subtitle">L'hsitorique</p>
+              <p class="subtitle">Calendrier des activités</p>
+              <p class="subtitle">Publics des activités</p>
+              <p class="subtitle">Un musée spécifiques</p>
+              <div style="margin-top:31px">
+                <p class="title">Suivez-nous</p>
+                <div class="flex-social">
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6807 8.5469C12.6808 7.6853 12.9775 6.85 13.521 6.18144C14.0645 5.51287 14.8216 5.0518 15.665 4.87576C16.5084 4.69972 17.3867 4.81943 18.1523 5.21477C18.9178 5.61011 19.5239 6.25697 19.8686 7.0466L23.1807 7.04663L20.1561 10.0712C19.9591 13.1134 18.6118 15.9666 16.3876 18.0515C14.1635 20.1363 11.2292 21.2966 8.18068 21.2966C5.18068 21.2966 4.43068 20.1716 4.43068 20.1716C4.43068 20.1716 7.43068 19.0466 8.93068 16.7966C8.93068 16.7966 2.93068 13.7966 4.43068 5.54663C4.43068 5.54663 8.18068 9.29663 12.6794 10.0466L12.6807 8.5469Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6807 16.0466C14.7517 16.0466 16.4307 14.3677 16.4307 12.2966C16.4307 10.2256 14.7517 8.54663 12.6807 8.54663C10.6096 8.54663 8.93066 10.2256 8.93066 12.2966C8.93066 14.3677 10.6096 16.0466 12.6807 16.0466Z" stroke="white" stroke-width="2" stroke-miterlimit="10"/>
+                    <path d="M16.8057 3.67163H8.55566C6.07038 3.67163 4.05566 5.68635 4.05566 8.17163V16.4216C4.05566 18.9069 6.07038 20.9216 8.55566 20.9216H16.8057C19.2909 20.9216 21.3057 18.9069 21.3057 16.4216V8.17163C21.3057 5.68635 19.2909 3.67163 16.8057 3.67163Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5557 8.54651C18.177 8.54651 18.6807 8.04283 18.6807 7.42151C18.6807 6.80019 18.177 6.29651 17.5557 6.29651C16.9343 6.29651 16.4307 6.80019 16.4307 7.42151C16.4307 8.04283 16.9343 8.54651 17.5557 8.54651Z" fill="white"/>
+                  </svg>
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.6807 21.2966C17.6512 21.2966 21.6807 17.2672 21.6807 12.2966C21.6807 7.32607 17.6512 3.29663 12.6807 3.29663C7.7101 3.29663 3.68066 7.32607 3.68066 12.2966C3.68066 17.2672 7.7101 21.2966 12.6807 21.2966Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.4307 8.54675H14.9307C14.3339 8.54675 13.7616 8.78381 13.3397 9.20576C12.9177 9.62772 12.6807 10.2 12.6807 10.7968V21.2968" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9.68066 13.7968H15.6807" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.9307 8.54663L8.93066 21.2966" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.45038 14.9735C5.79794 14.0003 5.38258 12.8878 5.23759 11.7251C5.09259 10.5625 5.222 9.38203 5.61543 8.2784C6.00887 7.17477 6.65539 6.17866 7.50317 5.36993C8.35095 4.56119 9.37642 3.96232 10.4974 3.62132C11.6183 3.28032 12.8035 3.20667 13.9581 3.40628C15.1126 3.60589 16.2043 4.07321 17.1457 4.77078C18.0871 5.46834 18.8519 6.37675 19.379 7.42318C19.906 8.46962 20.1805 9.62497 20.1806 10.7966C20.1806 14.9388 17.1806 17.5466 14.1806 17.5466C11.1806 17.5466 10.2776 15.5716 10.2776 15.5716" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="title">Professionels</p>
+              <p class="subtitle">Mise à dispo. d’espaces</p>
+              <p class="subtitle">Mécénats</p>
+              <p class="subtitle">Partenariats</p>
+              <p class="subtitle">Presse de communication</p>
+              <div class="btn">
+                <button class="filled">Billeterie</button>
+                <button class="outline">Contact</button>
+              </div>
+            </div>
+            <div>
+              <p class="title">Expositions</p>
+              <p class="subtitle">En ce moment</p>
+              <p class="subtitle">Prochainement</p>
+              <p class="subtitle">Passées</p>
+            </div>
+          </div>
+          <div>
+            <svg width="1186"  class="btm-footer" height="2" viewBox="0 0 1186 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1185.65 1.17163L0.650359 1.17154" stroke="white"/>
+            </svg>
+            <div class="info">
+              <p class="subtitle">Copyright © 2022 <span>Harmony</span></p>
+              <svg width="2" height="30" viewBox="0 0 2 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.680664 29.2966L0.680665 0.988308" stroke="white"/>
+              </svg>
+              <p class="subtitle">Informations pratiques</p>
+              <svg width="2" height="30" viewBox="0 0 2 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.680664 29.2966L0.680665 0.988308" stroke="white"/>
+              </svg>
+              <p class="subtitle">Contacts</p>
+              <svg width="2" height="30" viewBox="0 0 2 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.680664 29.2966L0.680665 0.988308" stroke="white"/>
+              </svg>
+              <p class="subtitle">Cookies</p>
+              <svg width="2" height="30" viewBox="0 0 2 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.680664 29.2966L0.680665 0.988308" stroke="white"/>
+              </svg>
+              <p class="subtitle">Aide</p>
+            </div>
+          </div>
+        </div>
+     </footer>
 </body>
 </html>
+
+<script>
+  $(document).ready(function(){
+    $('#slider_pictures').bxSlider({
+      auto: true,
+      slideWidth: 500,
+      minSlides: 4,
+      maxSlides: 4,
+      pager: false,
+      nextText: '',
+      prevText: '',
+      moveSlides: 1,
+      infiniteLoop: true,
+      responsive: true,
+      autoStart: true,
+      controls:false,
+      pause: 1000,
+
+    });
+  });
+</script>
