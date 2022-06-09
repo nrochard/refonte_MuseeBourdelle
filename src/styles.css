@@ -186,6 +186,36 @@ line-height: 40px;
     color: white;
     font-family: 'FuturaB';
     align-items: center;
+    transition: 0.3s all;
+}
+
+.black_btn{
+    background-color: var(--bronze-color);
+    display: flex;
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 15px;
+    border-radius: 99px;
+    color: white;
+    font-family: 'FuturaB';
+    align-items: center;
+    margin: 0 auto;
+    transition: 0.3s all;
+}
+
+.black_btn:hover{
+    background-color: var(--bronze-color-hover);
+}
+
+#book_musee .date_musee{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#book_musee{
+    padding: 50px;
+    background: url("./img/bg.png");
+    background-size: cover;
 }
 
 .fill_btn_orange{
@@ -211,6 +241,7 @@ line-height: 40px;
 .bx-wrapper{
     box-shadow: none;
     border: none;
+    background: transparent;
 }
 
 #event_musee{
@@ -353,4 +384,89 @@ footer {
     align-items: center;
     display: flex;
     justify-content: space-around;
+}
+
+#blog_musee{
+    padding: 50px;
+}
+
+#blog_musee .h3_musee{
+    padding-bottom: 30px;
+}
+
+.book_price{
+    display: flex;
+}
+
+#book_slider{
+    width: 315px;
+}
+
+.content_book{
+    background-color: var(--white-color);
+    padding: 20px;
+    position:relative;
+}
+
+#book_musee .h3_musee{
+    padding-bottom: 30px;
+}
+
+.book_title{
+    font-family: 'FuturaB';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+margin-bottom: 10px;
+}
+
+.date_book{
+    display: flex;
+    font-family: 'Futura';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+margin-bottom: 20px;
+}
+
+.date_book > svg{
+    margin-right: 5px;
+}
+
+#book_slider > div .btn_orange > svg{
+    margin-right: 5px !important;
+    margin-left: 0 !important;
+}
+
+.book_price{
+    font-family: 'FuturaB';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+}
+
+.btn_book{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+#map_musee{
+    padding: 50px;
+}
+
+#map_musee .h3_musee{
+    padding-bottom: 30px;
+}
+
+.map{
+    display: flex;
+    align-items: center;
+}
+
+.text_map{
+    padding: 20px 40px;
 }
