@@ -456,6 +456,7 @@ line-height: 26px;
 
 #map_musee{
     padding: 50px;
+    position: relative;
 }
 
 #map_musee .h3_musee{
@@ -469,4 +470,91 @@ line-height: 26px;
 
 .text_map{
     padding: 20px 40px;
+}
+
+.map_elipse{
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+footer{
+    z-index: 10;
+}
+
+.info{
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.map-responsive {
+    overflow:hidden;
+    position:relative;
+    height:0;
+    }
+    
+    .map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+@media(max-width:900px){
+    #hero{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .social_network{
+        left: unset;
+    }
+    #section_musee{
+        flex-direction: column;
+    }
+    #section_musee div, #section_musee img{
+        width: 100%;
+    }
+    #bandeau_musee{
+        padding:20px;
+    }
+    #event_musee{
+        flex-direction: column;
+    }
+    #event_musee div:nth-child(1),
+    #event_musee div:nth-child(2),
+    #event_musee div:nth-child(3),
+    #band_musee img,
+    #band_musee div{
+        width: 100%;
+    }
+    #event_musee div:nth-child(1),
+    #blog_musee{
+        padding: 20px
+    }
+    #event_musee img{
+        display: none;
+    }
+    #band_musee{
+        flex-direction: column;
+    }
+    #book_musee,
+    #map_musee{
+        padding: 20px;
+    }
+    .map_elipse{
+        display: none;
+    }
+    .map{
+        flex-direction: column;
+    }
+    .text_map{
+        padding: 20px 0;
+    }
+    .flex-footer{
+        flex-direction: column;
+    }
+    .btn{
+        padding-bottom: 20px;
+    }
 }
