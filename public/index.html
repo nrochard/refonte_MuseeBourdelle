@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../src/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+    <!-- Header -->
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="header relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="#">
+            <svg width="27" height="38" viewBox="0 0 27 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_617_432)">
+                <path d="M7.00468 20.9984H0.0124512V13.2446H0.147296C5.87094 13.2446 8.41062 13.4454 9.75413 14.0953C11.1476 14.7452 12.1939 16.4465 12.1939 18.1453C12.1939 19.1491 11.7444 20.0474 11.0976 20.4464C10.4509 20.8454 9.39203 20.9984 7.00468 20.9984Z" fill="white"/>
+                <path d="M11.632 32.5015C10.9353 33.2016 10.3385 33.302 7.00468 33.302H0.0124512V25.5005H0.147296C7.91117 25.5005 8.21085 25.5005 9.85402 26.3486C10.5997 26.7558 11.224 27.3551 11.6629 28.0849C12.1018 28.8148 12.3394 29.6489 12.3513 30.5016C12.3288 31.302 12.0815 32.0523 11.632 32.5015Z" fill="white"/>
+                <path d="M27 27.4853C27 30.1409 25.9503 32.6878 24.0818 34.5659C22.2132 36.4439 19.6789 37.4993 17.0361 37.5H10.4034C10.9542 37.3726 11.4739 37.1354 11.9317 36.8024C13.1254 35.8539 13.8221 34.0422 13.8221 32.0021C13.8221 28.9909 12.7783 26.8002 10.5383 25.1491C11.682 24.7978 12.1315 24.449 12.6285 23.7489C13.4251 22.6975 13.8221 21.2973 13.8221 19.6963C13.8221 17.0465 12.8782 14.9964 10.8255 13.2449H13.3227V5.39318H12.3238V8.74314H0V0.500001H16.3269C18.298 0.499361 20.2251 1.08622 21.8642 2.18633C23.5034 3.28644 24.781 4.85037 25.5354 6.68026C26.2898 8.51015 26.4871 10.5238 26.1024 12.4664C25.7176 14.409 24.7682 16.1933 23.374 17.5935C22.939 18.0311 22.4641 18.4268 21.9556 18.7754C23.488 19.6491 24.7623 20.9156 25.6485 22.4457C26.5347 23.9759 27.0011 25.7149 27 27.4853Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_617_432">
+                <rect width="27" height="37" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+          </a>
+        </div>
+        <div class="hidden md:flex items-center md:flex-1 lg:w-0">
+        <button type="button" class="btn_france group bg-white inline-flex items-center text-base  focus:outline-none focus:ring-2 " aria-expanded="false">
+            <span>France 🇫🇷</span>
+            <svg class="text-black ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+
+        <nav class="hidden md:flex space-x-10">
+          <a href="#" class="header_link text-base font-medium"> Musée </a>
+          <a href="#" class=" header_link  text-base font-medium"> Antoine Bourdelle </a>
+          <a href="#" class=" header_link  text-base font-medium"> Collections</a>
+          <a href="#" class=" header_link  text-base font-medium"> Expositions</a>
+          <a href="#" class=" header_link  text-base font-medium"> Activités</a>
+        </nav>
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <a href="#" class="btn_billeterie flex items-center justify-center px-4 py-2 text-base font-medium text-white">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1C0 0.447715 0.447715 0 1 0H9C9.26522 0 9.51957 0.105357 9.70711 0.292893L19.7071 10.2929C20.0976 10.6834 20.0976 11.3166 19.7071 11.7071L11.7071 19.7071C11.3166 20.0976 10.6834 20.0976 10.2929 19.7071L0.292893 9.70711C0.105357 9.51957 0 9.26522 0 9V1ZM2 2V8.58579L11 17.5858L17.5858 11L8.58579 2H2Z" fill="white"/>
+                    <path d="M7 5.5C7 6.32843 6.32843 7 5.5 7C4.67157 7 4 6.32843 4 5.5C4 4.67157 4.67157 4 5.5 4C6.32843 4 7 4.67157 7 5.5Z" fill="white"/>
+                </svg>
+                Billeterie
+            </a>
+            <a href="#" class="text-indigo-600 hover:text-indigo-500"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2ZM0 8C0 3.58172 3.58172 0 8 0C12.4183 0 16 3.58172 16 8C16 9.84871 15.3729 11.551 14.3199 12.9056L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L12.9056 14.3199C11.551 15.3729 9.84871 16 8 16C3.58172 16 0 12.4183 0 8Z" fill="white"/>
+              </svg>
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero">
+    <div class="text_hero">
+      <p class="h3_musee">Bienvenue au musée</p>
+      <p class="titre_musee">Bourdelle</p>
+      <p class="text_musee">Venez dévouvrir les travaux de l’artiste aux sein de ses ateliers du 18eme arrondissements.</p>
+    </div>
+    <div class="img_hero">
+        <img src="../src/img/statut.png">
+    </div>
+    <img class="elipse" src="../src/img/elipse.png">
+  </div>
+
+  
+</body>
+</html>

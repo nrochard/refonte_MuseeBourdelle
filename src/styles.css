@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Inter:wght@100&display=swap');
+@import url("https://use.typekit.net/iyl6ftd.css");
+
+@font-face {
+    font-family: Futura;
+    src: url("../src/fonts/FuturaPTBook.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "FuturaB";
+    src: url("../src/fonts/FuturaPTBold.otf") format("opentype");
+}
+
+
+
+:root {
+    /* Code couleur BRONZE */
+    --bronze-color: #231403;
+    --bronze-color-hover: #301B04;
+    --bronze-color-focus: #3A2206;
+
+    /* Code couleur ORANGE */
+    --orange-color: #F29A7E;
+    --orange-color-hover: #FFA285;
+    --orange-color-focus: #E39076;
+
+    /* Code couleur BLANC */
+    --white-color: #FFFFFF;
+    --white-color-hover: #F7F7F7;
+    --white-color-focus: #EDEDED;
+
+    /* Code couleur RED */
+    --red-color: #E15C5C;
+
+     /* Code couleur VERT */
+     --green-color: #5FE15C;
+
+      /* Code couleur BLEU */
+      --blue-color: #5CA1E1;
+}
+
+.header{
+    background-color: var(--bronze-color);
+}
+
+
+.btn_france{
+    padding: 5px 15px;
+    border-radius: 99px;
+}
+
+.btn_france span{
+    color: #000000;
+    font-family: 'Futura';
+}
+
+.header_link {
+    color: white;
+    font-family: 'FuturaB';
+    font-size: 16px;
+line-height: 21px;
+}
+
+nav{
+    align-items: center !important;
+}
+
+.btn_billeterie{
+    background-color: var(--orange-color);
+    padding: 12px;
+    border-radius: 99px;
+    font-family: 'FuturaB';
+    margin-right: 20px;
+}
+
+.btn_billeterie > svg{
+    margin-right: 10px;
+}
+
+#hero{
+    background-color: var(--bronze-color);
+    height: calc(100vh - 88px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+p.h3_musee {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31.25px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+p.titre_musee {
+    font-family: 'Arvo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48.83px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+p.text_musee {
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.elipse{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
